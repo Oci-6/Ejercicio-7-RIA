@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListaHospitalesComponent } from './lista-hospitales/lista-hospitales.component';
+import { NuevoHospitalComponent } from './nuevo-hospital/nuevo-hospital.component';
 
 const routes: Routes = [{
   path: ''
   ,
   children: [
-    { path: 'hospitales', component: ListaHospitalesComponent }
+    { path: 'hospitales', component: ListaHospitalesComponent },
+    { path: 'nuevohospital', component: NuevoHospitalComponent }
   ]
 }];
 
